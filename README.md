@@ -11,7 +11,7 @@ Politikası" / "Kullanım Koşulları" bağlantıları buraya işaret eder.
 | KVKK Aydınlatma Metni | [kvkk.html](kvkk.html) |
 
 İşletmeci: **Malik Cingöz** (bireysel geliştirici, Türkiye)
-İletişim: fredcakmaktas@gmail.com
+İletişim: destek@sencetravel.com
 
 Kaynak: ana depodaki `docs/legal/site/`. Değişiklikler orada yapılır,
 buraya kopyalanır — iki kopyanın ayrışmaması için düzenlemeleri doğrudan
