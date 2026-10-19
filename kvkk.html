@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sencé — KVKK Aydınlatma Metni</title>
+  <link rel="alternate" hreflang="en" href="./kvkk-en.html">
   <style>
     :root { color-scheme: light dark; }
     html, body { margin: 0; padding: 0; }
@@ -44,139 +45,244 @@
   </style>
 </head>
 <body>
-  <main>
-    <a class="backlink" href="./index.html">← Tüm hukuki belgeler</a>
-    <p class="brand">Sencé</p>
-    <h1>KVKK Aydınlatma Metni</h1>
-    <p class="meta">Yürürlük Tarihi: 22 Temmuz 2026 · Versiyon v1.1 · İlgili Mevzuat: 6698 sayılı KVKK</p>
-
-    <h2>1. Veri Sorumlusu</h2>
-    <ul>
-      <li><strong>Veri Sorumlusu</strong>: Malik Cingöz (bireysel geliştirici / individual developer, Türkiye)</li>
-      <li><strong>Sıfat</strong>: Sencé mobil uygulamasının işleticisi ve tek geliştiricisi</li>
-      <li><strong>E-posta</strong>: <a href="mailto:destek@sencetravel.com">destek@sencetravel.com</a></li>
-      <li><strong>Web</strong>: legal.sencetravel.com</li>
-    </ul>
-    <p>Postal adres ve çağrı merkezi bulunmamaktadır; iletişim yalnızca e-posta üzerinden yürütülür.</p>
-
-    <h2>2. Kişisel Veri Kategorileri</h2>
-    <h3>2.1 Kimlik Verisi</h3>
-    <ul>
-      <li>Ad, soyad</li>
-      <li>Doğum tarihi</li>
-      <li>T.C. Kimlik Numarası (e-arşiv fatura için)</li>
-      <li>Cinsiyet (opsiyonel, profil)</li>
-    </ul>
-    <h3>2.2 İletişim Verisi</h3>
-    <ul>
-      <li>E-posta adresi</li>
-      <li>Telefon numarası</li>
-      <li>Posta adresi (e-arşiv fatura için)</li>
-    </ul>
-    <h3>2.3 Müşteri İşlem Verisi</h3>
-    <ul>
-      <li>Rezervasyon geçmişi</li>
-      <li>Ödeme bilgileri (Stripe Vault'ta saklanır, Sencé erişimi yok)</li>
-      <li>Fatura bilgileri</li>
-      <li>Talep / şikayet kayıtları</li>
-    </ul>
-    <h3>2.4 Konum, İşlem Güvenliği, Pazarlama, Görsel</h3>
-    <p>Konum (GPS izniyle + IP-tabanlı yaklaşık), cihaz UUID, IP, oturum tokenları, pazarlama tercihleri (opt-in), profil ve gönderi fotoğrafları.</p>
-
-    <h2>3. Kişisel Veri İşleme Amaçları</h2>
-    <table>
-      <thead><tr><th>Amaç</th><th>Veri kategorisi</th><th>KVKK madde</th></tr></thead>
-      <tbody>
-        <tr><td>Üyelik kaydı + giriş</td><td>Kimlik, İletişim</td><td>Md. 5/2-c (sözleşme)</td></tr>
-        <tr><td>Rezervasyon işlemi</td><td>Tüm kategoriler</td><td>Md. 5/2-c</td></tr>
-        <tr><td>Ödeme + e-arşiv fatura</td><td>Kimlik, İletişim, İşlem</td><td>Md. 5/2-ç (VUK)</td></tr>
-        <tr><td>Müşteri desteği</td><td>İletişim, İşlem</td><td>Md. 5/2-f (meşru menfaat)</td></tr>
-        <tr><td>Anonim analiz / iyileştirme</td><td>İşlem güvenliği (anonimleştirilmiş)</td><td>Md. 5/2-f + opt-in</td></tr>
-        <tr><td>Pazarlama iletişimi</td><td>İletişim, Pazarlama</td><td>Md. 5/1 (açık rıza)</td></tr>
-        <tr><td>Hukuki yükümlülük (vergi vs.)</td><td>Tüm kategoriler</td><td>Md. 5/2-ç</td></tr>
-        <tr><td>Bilgi güvenliği + dolandırıcılık</td><td>İşlem güvenliği</td><td>Md. 5/2-f</td></tr>
-      </tbody>
-    </table>
-
-    <h2>4. Aktarılan Üçüncü Taraflar</h2>
-    <table>
-      <thead><tr><th>Taraf</th><th>Lokasyon</th><th>Sebep</th></tr></thead>
-      <tbody>
-        <tr><td>Stripe</td><td>ABD</td><td>PSD2 + 3DS uyumlu ödeme</td></tr>
-        <tr><td>Hotelbeds</td><td>İspanya</td><td>Otel rezervasyonu</td></tr>
-        <tr><td>Duffel</td><td>İngiltere</td><td>Uçak bileti</td></tr>
-        <tr><td>Viator (TripAdvisor)</td><td>ABD</td><td>Tur paketleri</td></tr>
-        <tr><td>Ticketmaster</td><td>ABD</td><td>Etkinlik biletleri</td></tr>
-        <tr><td>FlixBus / Obilet</td><td>Almanya / Türkiye</td><td>Otobüs bileti</td></tr>
-        <tr><td>Supabase</td><td>ABD (EU opsiyon)</td><td>Bulut altyapısı</td></tr>
-        <tr><td>Sentry</td><td>EU (Frankfurt)</td><td>Crash analytics</td></tr>
-        <tr><td>PostHog</td><td>EU (Frankfurt)</td><td>Kullanım istatistik</td></tr>
-        <tr><td>Apple / Google</td><td>ABD</td><td>Push notification, App Store</td></tr>
-      </tbody>
-    </table>
-    <p>Yurtdışına aktarımlar KVKK Md. 9 kapsamında <strong>açık rızanız</strong> veya <strong>yeterli koruma</strong> sağlanan ülkelere yapılır (SCC / DPA uygulanır).</p>
-
-    <h2>5. Saklama Süreleri</h2>
-    <table>
-      <thead><tr><th>Veri</th><th>Süre</th><th>Gerekçe</th></tr></thead>
-      <tbody>
-        <tr><td>Üyelik bilgileri</td><td>Aktif + 1 yıl</td><td>KVKK + sözleşme</td></tr>
-        <tr><td>Rezervasyon kayıtları</td><td>10 yıl</td><td>TTK + VUK</td></tr>
-        <tr><td>Ödeme kayıtları</td><td>10 yıl</td><td>VUK Md. 253</td></tr>
-        <tr><td>E-arşiv fatura</td><td>10 yıl</td><td>VUK Md. 253</td></tr>
-        <tr><td>Konum verileri</td><td>30 gün</td><td>KVKK + meşru menfaat</td></tr>
-        <tr><td>Anonim analytics</td><td>Süresiz</td><td>KVKK kapsamı dışı</td></tr>
-        <tr><td>Push tokenları</td><td>Cihaz aktif olduğu süre</td><td>Sözleşme</td></tr>
-      </tbody>
-    </table>
-    <p>Hesap silme (KVKK Md. 7 — Unutulma Hakkı): App içinde "Hesabımı Sil" → 30 gün grace period → 30 gün sonra hard delete. Mali kayıtlar 10 yıl saklanır ama PII (ad, e-posta) anonimleştirilir.</p>
-
-    <h2>6. KVKK Md. 11 — Veri Sahibinin Hakları</h2>
-    <ol>
-      <li>Bilgi alma — işlenen verilerinizin neler olduğunu öğrenme</li>
-      <li>Bilgi talep etme — amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-      <li>Yurtiçi/yurtdışı aktarım hakkında bilgi</li>
-      <li>Düzeltme — eksik/yanlış verilerin düzeltilmesi</li>
-      <li>Silme (KVKK Md. 7)</li>
-      <li>Bildirim — düzeltme/silme'nin 3. taraflara bildirilmesi</li>
-      <li>İtiraz — otomatik karar verme süreçlerine</li>
-      <li>Tazminat — hukuka aykırı işleme sonucu zarar</li>
-    </ol>
-    <p>Başvuru: <a href="mailto:destek@sencetravel.com">destek@sencetravel.com</a> — 30 gün içinde ücretsiz cevaplanır. Kimlik doğrulaması gerektiğinde e-posta üzerinden ek belge talep edilebilir.</p>
-
-    <h2>7. Açık Rıza ve Onay Mekanizması</h2>
-    <ol>
-      <li><strong>KVKK Aydınlatma Metni</strong>: Zorunlu</li>
-      <li><strong>Çerez Politikası</strong>: İsteğe bağlı</li>
-      <li><strong>Anonim Analytics</strong>: İsteğe bağlı (Sentry + PostHog)</li>
-      <li><strong>Pazarlama İletişimi</strong>: İsteğe bağlı (Email + Push)</li>
-    </ol>
-    <p>Onaylarınızı istediğiniz zaman Profil → Ayarlar → KVKK üzerinden güncelleyebilirsiniz.</p>
-
-    <h2>8. Veri Güvenliği Önlemleri</h2>
-    <p><strong>Teknik:</strong> HTTPS (TLS 1.3), Keychain/Keystore auth token, veritabanı RLS, Stripe Vault (kart bilgileri Sencé sunucusunda değil), edge function rate limit + Zod validation, düzenli güvenlik gözden geçirmesi, Sentry PII redaction.</p>
-    <p><strong>İdari:</strong> Bireysel geliştirici olarak KVKK farkındalığı sürekli güncel tutulur, veri işleme politikası ve prosedürleri, 3. taraf DPA'ları, güvenlik ihlali bildirim prosedürü (Md. 12/5 — 72 saat).</p>
-
-    <h2>9. Çocukların Verileri</h2>
-    <p>Sencé 18 yaş altı kullanıcılara hizmet vermez. 18 yaş altı tespit edilirse hesap askıya alınır ve veri silinir.</p>
-
-    <h2>10. Çerezler</h2>
-    <p>Sencé mobil uygulaması çerez kullanmaz. Web sitesi (sencetravel.com) ayrı bir çerez politikası ile yönetilir.</p>
-
-    <h2>11. Değişiklikler</h2>
-    <p>Bu Aydınlatma Metni gerektiğinde güncellenir. Önemli değişiklikler e-posta ile bildirilir ve uygulama içi modal ile yeni versiyon onayı istenir.</p>
-
-    <h2>12. İletişim</h2>
-    <ul>
-      <li>E-posta: <a href="mailto:destek@sencetravel.com">destek@sencetravel.com</a></li>
-      <li>Uygulama içi: Yardım Merkezi → KVKK Talepleri</li>
-    </ul>
-    <p>Postal adres ve çağrı merkezi bulunmamaktadır.</p>
-
-    <p><em>Son Güncelleme: 2026-07-22</em></p>
-
-    <hr>
-    <footer>© 2026 Malik Cingöz (Sencé). Tüm hakları saklıdır.</footer>
-  </main>
+<main>
+  <a class="backlink" href="./index.html">← Tüm belgeler</a>
+  <h1>Sencé — KVKK Aydınlatma Metni</h1>
+  <p class="meta">Sürüm 2.0 · Yürürlük tarihi: 19 Ekim 2026 · <a href="./kvkk-en.html" hreflang="en">English</a></p>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") md. 10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hazırlanmıştır.</p>
+<p>Yayın sürümü ve yürürlük tarihi: 2.0 · 19 Ekim 2026</p>
+<p>Bu metin Gizlilik Politikası'nın parçasıdır; Hesap Silme ve Veri Saklama Politikası ve Açık Rıza Metinleri ile birlikte okunur. Bu metinler arasında fark olursa sizin lehinize olan uygulanır.</p>
+<h2>§0 Kısa aydınlatma (ilk katman)</h2>
+<p>Bu metin sizi bilgilendirir; onayınızı istemez. Yalnız metni okuduğunuzu belirtirsiniz. Ayrıntılar §1–§10'dadır.</p>
+<ul>
+<li><strong>Veri sorumlusu:</strong> (eklenecek) ("Sencé"). İletişim: destek@sencetravel.com (§1).</li>
+<li><strong>İşlediğimiz veriler (§2):</strong> Hesap bilgileri ve yaş beyanınız; Kullanıcı İçeriğiniz ve mesajlarınız; izin verirseniz konumunuz; cihaz ve teknik veriler; Rezervasyon verileri (Rezervasyon Sahibi ve Misafir bilgileri, fiyat); Yapay Zekâ Özelliğine yazdıklarınız; hata kayıtları; destek yazışmaları; onay kayıtları; yalnız izninizle analitik verileri. Kart bilgilerinizi görmeyiz.</li>
+<li><strong>Amaçlar ve hukuki sebepler (§3):</strong></li>
+<li>Hesabınızı açmak, sosyal özellikleri, haritayı ve Yapay Zekâ Özelliğini sunmak, Rezervasyonu kurmak, hizmet Bildirimleri göndermek: sözleşmenin kurulması ve ifası (KVKK md. 5/2-c).</li>
+<li>Ön bilgilendirme ve işlem kayıtlarını tutmak, Talep ve Şikâyet Sistemini işletmek, vergi kayıtlarını ve trafik bilgisini saklamak, yetkili kurumların taleplerini karşılamak: hukuki yükümlülüğümüz (md. 5/2-ç).</li>
+<li>Dolandırıcılığı önlemek, güvenliği sağlamak, hataları izlemek, Rezervasyon Sahibi dışındaki Misafirlerin bilgilerini işlemek, Değerlendirme istemek: meşru menfaatimiz (md. 5/2-f).</li>
+<li>Hukuki uyuşmazlıklarda haklarımızı korumak: md. 5/2-e.</li>
+<li>Analitik ve Ticari Elektronik İleti: yalnız ayrıca vereceğiniz Açık Rıza (md. 5/1).</li>
+<li>Özel istek alanına sağlık gibi özel nitelikli bir bilgi yazarsanız bu bilginin Otele iletilmesi: ayrıca vereceğiniz Açık Rıza (md. 6/3). Herkese açık paylaşımınızda kendiniz yer verdiğiniz özel nitelikli bilgi: sizin alenileştirmeniz (md. 6/3).</li>
+<li><strong>Toplama yöntemi (§4):</strong> Uygulama ve web sitesi üzerinden, elektronik ortamda ve otomatik yollarla. Bir kısmını siz girersiniz, bir kısmını Apple, Google ve Nuitée bize iletir.</li>
+<li><strong>Aktarım (§5):</strong> Rezervasyonu kurmak ve konaklamayı sağlamak için Nuitée'ye ve Otele; Hizmetleri çalıştırmak için barındırma, yapay zekâ, harita, giriş, Bildirim, bağlantı kontrolü, hata izleme, analitik ve e-posta sağlayıcılarımıza; kanuni yükümlülüğümüzü yerine getirmek için yetkili kurumlara. Verileriniz başta AB ve ABD olmak üzere yurt dışına aktarılır. Güvence, Kişisel Verileri Koruma Kurulu'nun ilan ettiği standart sözleşmelerdir. Bu aktarımlar için rıza istemeyiz.</li>
+<li><strong>Saklama (§6):</strong> Amaç için gerektiği ya da kanunun öngördüğü süre kadar. Hesabınızı silerseniz verileriniz talebinizden itibaren en geç 30 gün içinde silinir (silme, 30 günlük bekleme bittikten sonra çalışan günlük işle tamamlanır; bu nedenle 31. güne sarkabilir). Kanunen saklamamız gereken Rezervasyon kayıtlarının Hesabınızla bağlantısı kaldırılır ve iletişim bilgileri silinir; kalan kayıt takma adlıdır, anonim değildir. Onay kayıtlarını ispat için saklarız (§6, §8).</li>
+<li><strong>Haklarınız (§7, §9):</strong> KVKK md. 11'deki haklarınızı destek@sencetravel.com adresine yazarak ya da §7'deki diğer yollarla kullanabilirsiniz. En geç 30 gün içinde yanıt veririz. Yanıtımızı yetersiz bulursanız Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.</li>
+<li><strong>Açık Rıza (§8):</strong> Açık Rıza gereken işlemler için ayrı başlık ve ayrı beyanla, Açık Rıza Metinlerinde izin isteriz. İzin vermemeniz Hizmetleri kullanmanızı engellemez.</li>
+</ul>
+<h2>Tanımlar</h2>
+<p>Büyük harfle başlayan terimler (Hesap, Rezervasyon, Rezervasyon Sahibi, Misafir, Otel, Nuitée, Kullanıcı İçeriği, Bildirim, Yapay Zekâ Özelliği, Talep ve Şikâyet Sistemi vb.) Sencé'nin bütün hukuki metinlerinde aynı anlamdadır. Tam liste Gizlilik Politikası'nın "Tanımlar" bölümündedir. Bu metinde ayrıca:</p>
+<table><thead><tr><th>Terim</th><th>Anlamı</th></tr></thead><tbody>
+<tr><td>KVKK</td><td>6698 sayılı Kişisel Verilerin Korunması Kanunu</td></tr>
+<tr><td>Kurul / Kurum</td><td>Kişisel Verileri Koruma Kurulu / Kişisel Verileri Koruma Kurumu</td></tr>
+<tr><td>Aydınlatma</td><td>Verileriniz işlenmeden önce size bilgi verilmesi. Aydınlatma için onay istenmez.</td></tr>
+<tr><td>Açık Rıza</td><td>Belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rıza. Ayrı istenir, seçimliktir, geri alınabilir.</td></tr>
+<tr><td>Veri işleyen</td><td>Verilerinizi bizim adımıza ve talimatımızla işleyen kişi ya da kuruluş</td></tr>
+<tr><td>Ayrı veri sorumlusu</td><td>Verilerinizi kendi amaçları için kendi sorumluluğunda işleyen alıcı</td></tr>
+<tr><td>Takma adlı veri</td><td>Adınızı taşımayan ama ek bilgiyle size bağlanabilen veri. Anonim değildir; kişisel veri sayılır.</td></tr>
+</tbody></table>
+<h2>§1 Veri sorumlusu</h2>
+<p><strong>Veri sorumlusu</strong></p>
+<p>Hizmetler kapsamında kişisel verilerinizin veri sorumlusu: (eklenecek) (bu metinde "Sencé" ya da "biz").</p>
+<ul>
+<li>Adres: (eklenecek)</li>
+<li>MERSİS numarası ya da vergi kimlik numarası: (eklenecek)</li>
+<li>Kayıtlı elektronik posta (KEP) adresi: (eklenecek)</li>
+<li>E-posta: destek@sencetravel.com</li>
+<li>Web: https://legal.sencetravel.com</li>
+<li>Veri Sorumluları Siciline (VERBİS) kayıt durumu: (eklenecek)</li>
+</ul>
+<p><strong>Temsilcilerimiz</strong></p>
+<ul>
+<li>AB/AEA'daki kullanıcılar için Genel Veri Koruma Tüzüğü (GDPR) md. 27 uyarınca atadığımız temsilci: (eklenecek)</li>
+<li>Birleşik Krallık'taki kullanıcılar için UK GDPR md. 27 uyarınca atadığımız temsilci: (eklenecek)</li>
+<li>Veri korumayla ilgili her konuda bize ya da bulunduğunuz bölgedeki temsilcimize yazabilirsiniz. Temsilcimize yaptığınız başvuru bize yapılmış sayılır.</li>
+<li>AB Dijital Hizmetler Yasası kapsamındaki yasal temsilcimiz ayrı bir görevdir; bilgileri Gizlilik Politikası'nın "Bölgeye özgü bilgiler" bölümündedir.</li>
+<li>Veri koruma görevlisi: atanmadı; bütün sorularınız için destek@sencetravel.com adresine yazabilirsiniz</li>
+</ul>
+<p><strong>Rezervasyonlarda diğer sorumlular</strong></p>
+<p>Otel Rezervasyonlarında Nuitée ve Otel, sizinle ilgili verileri kendi yükümlülükleri için kendi sorumluluklarında da işler. Bu işlemler için Nuitée'nin ve Otelin gizlilik metinleri de geçerlidir (bkz. §5).</p>
+<h2>§2 İşlenen veriler</h2>
+<p><strong>Topladığımız veriler</strong></p>
+<table><thead><tr><th>Kategori</th><th>Hangi veriler</th><th>Nereden</th></tr></thead><tbody>
+<tr><td>Hesap</td><td>Ad, kullanıcı adı, e-posta adresi, telefon numarası (verirseniz), profil fotoğrafı, biyografi. Apple ya da Google hesabıyla girerseniz bu hizmetin bize ilettiği ad, e-posta adresi ve giriş belirteci.</td><td>Sizden; Apple ya da Google'dan</td></tr>
+<tr><td>Yaş</td><td>Kayıtta verdiğiniz yaş beyanı (profil kurulumunda yaşınızı yıl olarak seçersiniz; seçim 18'den başlar; doğum tarihiniz alınmaz ve yalnız 18 yaşında ya da daha büyük olduğunuz kaydedilir)</td><td>Sizden</td></tr>
+<tr><td>Kullanıcı İçeriği ve etkileşim</td><td>Gönderi fotoğraf ve videoları, açıklamalar, yorumlar, beğeniler, takip ettikleriniz ve takipçileriniz, doğrudan mesajlarınız, An'lar, rota ve gezi listeleri, kaydettikleriniz, favorileriniz, Değerlendirmeleriniz, fiyat alarmlarınız, sadakat ve puan kayıtlarınız (toplam ve yıllık puan, üyelik tarihi ve puan hareketleri)</td><td>Sizden; diğer Kullanıcılardan (size gelen mesaj, yorum ve takipler)</td></tr>
+<tr><td>Konum</td><td>İzin verirseniz, yalnız Uygulama açıkken cihazınızın konumu; gönderi ve An konumu (yaklaşık konum olarak yayımlanır); ziyaret ettiğiniz bölgelerin geçmişi (yalnız siz görürsünüz). Fotoğraflarınızın içindeki konum bilgisi yüklemeden önce silinir.</td><td>Cihazınızdan; sizden</td></tr>
+<tr><td>Cihaz ve teknik</td><td>Kurulum kimliği (Uygulamanın ürettiği rastgele numara), işletim sistemi, Uygulama sürümü, dil, IP adresi, push Bildirim jetonu; sunucu kayıtlarında bağlantı zamanı ve istek bilgisi; https://legal.sencetravel.com sitesini ziyaret ettiğinizde IP adresiniz</td><td>Cihazınızdan, otomatik olarak</td></tr>
+<tr><td>Rezervasyon</td><td>Arama bilgileri (tarihler, oda ve kişi sayısı, çocuk yaşları, uyruk, aradığınız yer); Rezervasyon Sahibinin adı, soyadı, e-posta adresi ve telefonu; Misafirlerin adı, soyadı ve e-posta adresi; özel istek metni; Otel; Toplam Fiyat, para birimi, vergiler ve Sencé Payı; onay kodları; iptal ve iade bilgileri</td><td>Sizden; Nuitée'den</td></tr>
+<tr><td>Dolandırıcılık önleme</td><td>Rezervasyon sırasında IP adresi, kurulum kimliği, dil, işletim sistemi ve Uygulama bilgisi</td><td>Cihazınızdan, otomatik olarak</td></tr>
+<tr><td>Yapay Zekâ Özelliği</td><td>Yapay Zekâ Özelliğine yazdığınız metin ve sohbetin önceki mesajları; öneri isterseniz bütçe, tarihler, kişi sayısı, çıkış ve varış yeri, ilgi alanları, seyahat tarzı ve (seçerseniz) geçmiş Rezervasyonlarınızın özeti; bir yer ya da Otel hakkında sorduğunuz soru ile o yerin adı, kategorisi ve şehri; yanıtın dili. Günlük kullanım sınırını uygulamak için Hesap kimliğiniz ya da IP adresiniz Sencé'de kullanılır; bunlar yapay zekâ sağlayıcısına gönderilmez.</td><td>Sizden; Sencé kayıtlarından</td></tr>
+<tr><td>Analitik (bu sürümde kapalı) ve Keşfet ölçümü</td><td>Hesap kimliğiniz (Hesabınıza bağlı benzersiz tanımlayıcı; giriş yapmadan önce onun yerine Uygulamanın atadığı rastgele bir numara; ikisi de adınızı ya da e-posta adresinizi içermez) ve Uygulama olayları: Uygulamanın açılması, giriş ve kayıt, Rezervasyonun başlatılması, onaylanması ya da hata vermesi, özellik kullanımı (bu sürümde analitik kapalıdır; PostHog'a hiçbir veri gönderilmez). Ayrıca Keşfet'te hangi gönderiyi gördüğünüzü, ekranda ne kadar kaldığınızı, videonun ne kadarını izlediğinizi ve ayrıntısını açıp açmadığınızı Hesabınıza bağlı olarak kaydederiz</td><td>Cihazınızdan, otomatik olarak</td></tr>
+<tr><td>Hata, çökme ve performans kayıtları</td><td>Hatanın teknik ayrıntıları; performans ölçümleri; ağ hatalarında teşhis kaydı (hangi işlemde, hangi tür hata, ne kadar sürede); cihaz modeli, işletim sistemi ve Uygulama sürümü; giriş yaptıysanız Hesap kimliğiniz (Hesabınıza bağlı benzersiz tanımlayıcı). E-posta ve IP adresi kayda girmeden silinir.</td><td>Cihazınızdan, otomatik olarak</td></tr>
+<tr><td>Destek ve talepler</td><td>E-posta adresiniz, yazdıklarınız, eklediğiniz dosyalar; Talep ve Şikâyet Sistemine ilettiğiniz talepler ve sonuçları</td><td>Sizden</td></tr>
+<tr><td>Güvenlik ve topluluk</td><td>Yaptığınız ya da hakkınızda yapılan İçerik Şikâyetleri, Engellemeler, Moderasyon Kararları ve İtirazlar</td><td>Sizden; diğer Kullanıcılardan</td></tr>
+<tr><td>Onay kayıtları</td><td>Hangi metnin hangi sürümünü ne zaman gördüğünüz ya da kabul ettiğiniz; verdiğiniz ve geri aldığınız izinler; ödeme öncesi teyidiniz (bu sürümde bu kayıtlardan yalnız yaş beyanınız tutulur)</td><td>Uygulamadan, otomatik olarak</td></tr>
+</tbody></table>
+<p><strong>Başkası adına verdiğiniz bilgiler.</strong> Rezervasyona başka Misafirler eklediğinizde onların bilgilerini bize siz iletirsiniz.</p>
+<p><strong>Görmediğimiz ve istemediğimiz veriler.</strong> Kart bilgilerinizi görmeyiz ve saklamayız: kart bilgileri, Uygulamada açılan Nuitée ödeme formuna girilir ve doğrudan Nuitée'ye gider. T.C. kimlik numarası, pasaport numarası, cinsiyet ve posta adresi istemeyiz. Sağlık, din, siyasi düşünce, etnik köken, cinsel hayat, biyometrik veri gibi özel nitelikli verileri sizden istemeyiz.</p>
+<p><strong>Zorunlu ve isteğe bağlı veriler.</strong></p>
+<ul>
+<li>Hesap açmak için kayıt ekranında istenen bilgiler gerekir; telefon numarası, profil fotoğrafı ve biyografi isteğe bağlıdır.</li>
+<li>Rezervasyon için rezervasyon formundaki bilgiler gerekir; bunlar olmadan Nuitée ve Otel Rezervasyonu kuramaz.</li>
+<li>Konum, kamera ve fotoğraf erişimi, Bildirimler, analitik ve Yapay Zekâ Özelliği isteğe bağlıdır. Bunları kullanmazsanız yalnız ilgili özellik çalışmaz; Uygulamanın geri kalanını kullanabilirsiniz.</li>
+</ul>
+<h2>§3 Amaçlar ve hukuki sebepler</h2>
+<p>Her amacın KVKK'daki hukuki sebebini ayrı yazıyoruz. Kısaltmaların tam anlamı tablonun altındadır. AB/AEA ve Birleşik Krallık'taki kullanıcılar için GDPR ve UK GDPR'daki dayanaklar Gizlilik Politikası'nın "Amaçlar ve hukuki sebepler" bölümündedir.</p>
+<table><thead><tr><th>#</th><th>Amaç</th><th>Kullanılan veriler</th><th>KVKK'daki hukuki sebep</th></tr></thead><tbody>
+<tr><td>1</td><td>Hesabınızı açmak, girişinizi doğrulamak ve Hesabınızı yönetmek</td><td>Hesap; cihaz ve teknik</td><td>md. 5/2-c</td></tr>
+<tr><td>2</td><td>Hesap e-postalarını göndermek (doğrulama, şifre sıfırlama)</td><td>E-posta adresi</td><td>md. 5/2-c</td></tr>
+<tr><td>3</td><td>Yaşınızı sormak ve yaşa bağlı sınırları uygulamak</td><td>Yaş beyanı</td><td>md. 5/2-c (Rezervasyon için ehliyet); 5651 sayılı Kanun ek md. 4/7 bize uygulanıyorsa ayrıca md. 5/2-ç</td></tr>
+<tr><td>4</td><td>Sosyal özellikleri sunmak: profil, gönderi, yorum, beğeni, takip, An, rota ve gezi listeleri, kaydedilenler, Değerlendirmeler</td><td>Hesap; Kullanıcı İçeriği; gönderi konumu</td><td>md. 5/2-c</td></tr>
+<tr><td>5</td><td>Doğrudan mesajlaşmayı sağlamak</td><td>Mesajlar; Hesap</td><td>md. 5/2-c</td></tr>
+<tr><td>6</td><td>Harita, yakındaki yerler ve adres aramasını sunmak; gönderinize konum eklemek</td><td>Anlık konum (izin verirseniz); arama metni</td><td>md. 5/2-c</td></tr>
+<tr><td>7</td><td>Ziyaret ettiğiniz bölgelerin geçmişini size göstermek</td><td>Bölge geçmişi</td><td>md. 5/2-c</td></tr>
+<tr><td>8</td><td>Otel aramak; fiyat ve koşulları göstermek</td><td>Arama bilgileri; uyruk</td><td>md. 5/2-c</td></tr>
+<tr><td>9</td><td>Rezervasyonu kurmak; bilgileri Nuitée'ye ve Otele iletmek; onay, değişiklik, iptal ve iade taleplerini iletmek ve sonuçlarını göstermek</td><td>Rezervasyon verileri</td><td>Rezervasyon Sahibi: md. 5/2-c. Diğer Misafirler: md. 5/2-f</td></tr>
+<tr><td>10</td><td>Özel isteğinizi Otele iletmek</td><td>Özel istek metni</td><td>md. 5/2-c. Sağlık gibi özel nitelikli bir bilgi yazarsanız: md. 6/3 kapsamında Açık Rızanız (bkz. Açık Rıza Metinleri R6.1)</td></tr>
+<tr><td>11</td><td>Rezervasyonlarda dolandırıcılığı önlemek</td><td>IP adresi, kurulum kimliği, dil, işletim sistemi, Uygulama bilgisi</td><td>md. 5/2-f</td></tr>
+<tr><td>12</td><td>Ön bilgilendirmeyi göstermek, teyidinizi almak ve kaydetmek; Talep ve Şikâyet Sistemini işletmek; işlem kayıtlarını saklamak</td><td>Rezervasyon verileri; onay kayıtları; talepler</td><td>md. 5/2-ç (6502 sayılı Kanun md. 48; Mesafeli Sözleşmeler Yönetmeliği md. 5, 6, 12/A, 20; Elektronik Ticaret Yönetmeliği md. 33/6)</td></tr>
+<tr><td>13</td><td>Destek taleplerinizi yanıtlamak</td><td>Destek yazışmaları; Hesap; Rezervasyon</td><td>md. 5/2-c; Rezervasyonla ilgili talep ve şikâyetlerde ayrıca md. 5/2-ç</td></tr>
+<tr><td>14</td><td>Yapay Zekâ Özelliğini sunmak</td><td>Yapay Zekâ Özelliği verileri</td><td>md. 5/2-c — özelliği siz açar ve siz kullanırsınız (bkz. Açık Rıza Metinleri R3)</td></tr>
+<tr><td>15</td><td>Hizmet Bildirimleri göndermek: yeni mesaj, yorum, takip, Rezervasyon durumu</td><td>Push jetonu; Bildirim içeriği</td><td>md. 5/2-c</td></tr>
+<tr><td>16</td><td>Kurduğunuz fiyat alarmları için Bildirim göndermek</td><td>Alarm bilgileri (Otel, tarih, fiyat); push jetonu</td><td>md. 5/2-c</td></tr>
+<tr><td>17</td><td>Konaklamadan sonra Değerlendirme istemek</td><td>Otel, konaklama tarihi; push jetonu ya da e-posta</td><td>md. 5/2-f</td></tr>
+<tr><td>18</td><td>Ticari Elektronik İleti göndermek (bugün göndermiyoruz)</td><td>Ad, e-posta, push jetonu, izin kayıtları</td><td>md. 5/1 — Açık Rızanız (ve 6563 sayılı Kanun md. 6 uyarınca onayınız)</td></tr>
+<tr><td>19</td><td>Hataları, çökmeleri ve ağ sorunlarını izlemek, Uygulamayı kararlı tutmak</td><td>Hata, çökme ve performans kayıtları</td><td>md. 5/2-f</td></tr>
+<tr><td>20</td><td>Uygulamanın nasıl kullanıldığını ölçmek (analitik)</td><td>Analitik verileri</td><td>md. 5/1 — Açık Rızanız</td></tr>
+<tr><td>21</td><td>Güvenliği sağlamak; kötüye kullanımı önlemek; İçerik Şikâyetlerini, Engellemeleri, Moderasyon Kararlarını ve İtirazları işlemek</td><td>Hesap; Kullanıcı İçeriği; şikâyet, Engelleme ve karar kayıtları; IP adresi</td><td>md. 5/2-f; kanuni içerik kaldırma yükümlülüklerinde md. 5/2-ç (5651 sayılı Kanun)</td></tr>
+<tr><td>22</td><td>Yer sağlayıcı olarak trafik bilgisini saklamak</td><td>IP adresi, bağlantı zamanı, istek ve sonuç bilgisi</td><td>md. 5/2-ç (5651 sayılı Kanun md. 5/3)</td></tr>
+<tr><td>23</td><td>Onay kayıtlarını tutmak: Aydınlatmanın gösterildiği, koşulların kabul edildiği, izinlerin verildiği ve geri alındığı, ödeme öncesi teyidin yapıldığı anlar ve metin sürümleri</td><td>Onay kayıtları</td><td>md. 5/2-ç (ispat yükümlülüğü); md. 5/2-e</td></tr>
+<tr><td>24</td><td>Mali, muhasebe ve vergi kayıtlarını tutmak</td><td>Tutar, para birimi, Sencé Payı, fatura bilgileri</td><td>md. 5/2-ç (213 sayılı Vergi Usul Kanunu md. 253; tacir sayılırsak 6102 sayılı Türk Ticaret Kanunu md. 82)</td></tr>
+<tr><td>25</td><td>Silme ve imha işlemlerini kanıtlamak</td><td>İmha kaydı</td><td>md. 5/2-ç (Silme Yönetmeliği md. 7/3)</td></tr>
+<tr><td>26</td><td>Hukuki uyuşmazlıklarda haklarımızı korumak</td><td>Uyuşmazlığın gerektirdiği veriler</td><td>md. 5/2-e</td></tr>
+<tr><td>27</td><td>Yetkili kurumların kanuni taleplerini karşılamak</td><td>Talebin gerektirdiği veriler</td><td>md. 5/2-ç</td></tr>
+<tr><td>28</td><td>Herkese açık paylaştığınız içerikte kendiliğinizden yer verdiğiniz özel nitelikli bilgileri yayımlamak</td><td>Kullanıcı İçeriği</td><td>md. 6/3 kapsamında sizin alenileştirmeniz</td></tr>
+<tr><td>29</td><td>Gönderinizden türetilip herkese açık yer kataloğuna eklenen yer kaydını tutmak</td><td>Yer adı, konum, açıklama, kapak görseli</td><td>meşru menfaat (KVKK md. 5/2-f; GDPR md. 6(1)(f))</td></tr>
+<tr><td>30</td><td>https://legal.sencetravel.com sitesini size sunmak</td><td>Ziyaretçi IP adresi</td><td>md. 5/2-f</td></tr>
+</tbody></table>
+<p><strong>Kısaltmalar:</strong></p>
+<ul>
+<li>md. 5/1 — Açık Rızanız.</li>
+<li>md. 5/2-c — Bir sözleşmenin kurulması ya da ifasıyla doğrudan ilgili olması kaydıyla, sözleşmenin taraflarına ait verilerin işlenmesinin gerekli olması.</li>
+<li>md. 5/2-ç — Veri sorumlusu olarak hukuki yükümlülüğümüzü yerine getirebilmemiz için zorunlu olması.</li>
+<li>md. 5/2-e — Bir hakkın tesisi, kullanılması ya da korunması için zorunlu olması.</li>
+<li>md. 5/2-f — Temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatlerimiz için zorunlu olması.</li>
+<li>md. 6/3 — Özel nitelikli verilerin işlenebileceği hâller: bu tabloda yalnız Açık Rızanız ve sizin alenileştirmeniz kullanılır.</li>
+</ul>
+<p><strong>Meşru menfaatlerimiz.</strong> Meşru menfaate dayandığımız işlemlerde amacımız şudur: Hizmetleri güvenli ve hatasız sunmak, Rezervasyonlarda dolandırıcılığı önlemek, başkası adına yapılan Rezervasyonu kurabilmek, konaklamanız hakkında geri bildirim almak, kanuni kayıtlarımızı tutmak ve haklarımızı korumak. Bu menfaatlerin sizin hak ve özgürlüklerinizin önüne geçmediğini her işlem için ayrı değerlendirdik. Bu işlemlere itiraz edebilirsiniz (bkz. §7).</p>
+<p><strong>Açık Rızaya dayanan işlemler.</strong> Yalnız analitik ve Ticari Elektronik İleti Açık Rızanıza dayanır; özel istek alanına özel nitelikli bilgi yazmanız da Açık Rıza gerektirir. Bunlar için ayrı başlık ve ayrı beyanla izin isteriz (bkz. §8). Sözleşme ya da başka bir hukuki sebebe dayanan işlemler için sizden Açık Rıza istemeyiz. Yurt dışına aktarımların dayanağı da Açık Rıza değildir (bkz. §5.3).</p>
+<h2>§4 Toplama yöntemi</h2>
+<p>Verileri Uygulama ve web sitesi üzerinden, elektronik ortamda ve otomatik yollarla toplarız: bir kısmını siz girersiniz, bir kısmı cihazınızdan otomatik olarak gelir, bir kısmını Apple, Google ve Nuitée bize iletir. Destek yazışmalarını e-postayla alırız. KVKK başvurunuzu yazılı olarak gönderirseniz bu başvuruyu otomatik olmayan yolla alırız. Her yolla toplanan verinin hukuki sebebi, §3'te o verinin kullanıldığı amaç için gösterilen sebeptir.</p>
+<h2>§5 Aktarım: yurt içi ve yurt dışı</h2>
+<p>Verilerinizi yalnız aşağıdaki alıcılarla, tabloda yazan amaçlar için ve gerektiği kadar paylaşırız. "Rol" sütunu, alıcının verinizi bizim adımıza mı (veri işleyen) yoksa kendi amaçları için mi (ayrı veri sorumlusu) işlediğini gösterir. Yurt içindeki alıcılara aktarım KVKK md. 8'e, yurt dışındakilere md. 9'a dayanır; her aktarımın hukuki sebebi, o amaç için §3'te gösterilen sebeptir.</p>
+<h3>§5.1 Yurt içindeki alıcılar</h3>
+<table><thead><tr><th>Alıcı</th><th>Ne için</th><th>Hangi veriler</th><th>Nerede</th><th>Rol</th></tr></thead><tbody>
+<tr><td>Otel (Türkiye'deki Oteller)</td><td>Konaklamanın sağlanması</td><td>Rezervasyon Sahibi ve Misafir adları, iletişim bilgileri, tarih, oda, özel istek</td><td>Türkiye; veriler Otele Nuitée aracılığıyla ulaşır</td><td>Ayrı veri sorumlusu</td></tr>
+<tr><td>Yetkili kamu kurum ve kuruluşları, mahkemeler</td><td>Kanuni talepler</td><td>Talebin gerektirdiği ölçüde</td><td>Türkiye</td><td>Ayrı veri sorumlusu</td></tr>
+</tbody></table>
+<h3>§5.2 Yurt dışındaki alıcılar</h3>
+<table><thead><tr><th>Alıcı</th><th>Ne için</th><th>Hangi veriler</th><th>Nerede</th><th>Rol</th></tr></thead><tbody>
+<tr><td>Supabase</td><td>Barındırma, veritabanı, giriş doğrulama, dosya depolama</td><td>Uygulamadaki bütün veriler</td><td>AB (Frankfurt)</td><td>Veri işleyen</td></tr>
+<tr><td>Nuitée Travel Limited</td><td>Rezervasyon, ödeme, iptal ve iade, dolandırıcılık önleme; Rezervasyon onay ve iptal e-postalarının size gönderilmesi; bir Otel hakkında Yapay Zekâ Özelliğine sorduğunuz sorunun yanıtlanması</td><td>Rezervasyon ve dolandırıcılık önleme verileri; Otel hakkındaki sorunuz</td><td>İrlanda şirketi; veriler ağırlıkla ABD'de işlenir</td><td>Ayrı veri sorumlusu</td></tr>
+<tr><td>Otel (Türkiye dışındaki Oteller)</td><td>Konaklamanın sağlanması</td><td>Rezervasyon Sahibi ve Misafir adları, iletişim bilgileri, tarih, oda, özel istek</td><td>Otelin bulunduğu ülke; veriler Otele Nuitée aracılığıyla ulaşır (bkz. §5.3)</td><td>Ayrı veri sorumlusu</td></tr>
+<tr><td>Google (Gemini)</td><td>Yapay Zekâ Özelliği</td><td>Yapay Zekâ Özelliğine yazdığınız metin ve sohbetin önceki mesajları; öneri isterseniz bütçe, tarihler, kişi sayısı, çıkış ve varış yeri, ilgi alanları, seyahat tarzı ve (seçerseniz) geçmiş Rezervasyonlarınızın özeti; bir yer hakkında sorarsanız o yerin adı, kategorisi ve şehri; yanıtın dili</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Google (Haritalar, Yerler)</td><td>Yer ve yakındaki mekân arama</td><td>Konum koordinatı, arama metni</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Google ve Apple (bağlantı kontrolü)</td><td>Uygulama açıkken internet bağlantısını denetlemek</td><td>IP adresi</td><td>ABD</td><td>Rol henüz belirlenmedi</td></tr>
+<tr><td>Mapbox</td><td>Harita, adres arama, gönderi konumunun adrese çevrilmesi</td><td>Arama metni, konum koordinatı</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Apple ve Google (hesapla giriş)</td><td>Apple ya da Google hesabıyla giriş</td><td>Ad, e-posta, giriş belirteci</td><td>ABD</td><td>Ayrı veri sorumlusu</td></tr>
+<tr><td>Apple (push Bildirim hizmeti) ve Expo</td><td>Bildirimlerin iletilmesi; Uygulama güncellemeleri</td><td>Push jetonu; Bildirim içeriği (gönderenin adı ve mesajın ya da yorumun ilk bölümü gibi); güncelleme denetiminde Expo'nun cihaz kimliği (EAS istemci kimliği) ve IP adresi</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Sentry</td><td>Hata ve çökme izleme</td><td>Hata ve çökme kayıtları</td><td>AB (Almanya)</td><td>Veri işleyen</td></tr>
+<tr><td>PostHog</td><td>Analitik (yalnız izninizle)</td><td>Analitik verileri</td><td>AB</td><td>Veri işleyen</td></tr>
+<tr><td>Resend</td><td>Hesap e-postaları</td><td>E-posta adresi, e-posta içeriği</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Cloudflare</td><td>Alan adı; destek e-postalarının posta kutumuza yönlendirilmesi</td><td>Destek e-postaları</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>(eklenecek)</td><td>Destek e-postalarının saklanması</td><td>Destek e-postaları</td><td>(eklenecek)</td><td>Veri işleyen</td></tr>
+<tr><td>GitHub (GitHub Pages)</td><td>https://legal.sencetravel.com sitesinin barındırılması</td><td>Ziyaretçi IP adresi</td><td>ABD</td><td>Veri işleyen</td></tr>
+<tr><td>Yabancı yetkili makamlar</td><td>Kanuni talepler</td><td>Talebin gerektirdiği ölçüde</td><td>İlgili ülke</td><td>Ayrı veri sorumlusu</td></tr>
+</tbody></table>
+<ul>
+<li><strong>Diğer Kullanıcılar:</strong> Herkese açık profiliniz ve içeriğiniz diğer Kullanıcılara gösterilir; gönderdiğiniz mesajlar alıcısına iletilir.</li>
+<li><strong>Planlanan, bugün kullanılmayan alıcılar:</strong> Rezervasyon e-postaları için Postmark ve otel dışındaki hizmetlerde ödeme için Sencé'nin Stripe hesabı. Bunlar devreye girmeden önce bu tabloyu günceller, yeni aktarım güvencesini kurarız.</li>
+<li><strong>Danışmanlar:</strong> Hukuk ve mali danışmanlarımızla kişisel verinizi yalnız kanuni yükümlülüklerimiz ve haklarımızın korunması için, gerektiği ölçüde paylaşırız.</li>
+<li><strong>Hizmetlerin devri:</strong> Hizmetler başka bir işletmeye devredilirse verileriniz, bu metindeki amaçlarla sınırlı kalmak üzere devralana geçebilir. Devirden önce sizi haberdar ederiz.</li>
+<li><strong>Satış ve reklam:</strong> Kişisel verilerinizi satmayız. Reklam amacıyla kimseyle paylaşmayız.</li>
+</ul>
+<h3>§5.3 Yurt dışına aktarım (KVKK md. 9)</h3>
+<p>Sencé Türkiye'den işletilir. Verileriniz AB'de (Frankfurt) barındırılır ve bazı hizmet sağlayıcılarımız ABD'dedir (bkz. §5.2). Bu nedenle verileriniz yurt dışına aktarılır.</p>
+<ul>
+<li>Bu metnin tarihinde, aktarım yaptığımız ülkeler için Kişisel Verileri Koruma Kurulu'nun ilan ettiği bir yeterlilik kararı yoktur; bu nedenle yeterlilik kararına dayanmayız.</li>
+<li>Her aktarım, §3 tablosunda o amaç için yazdığımız hukuki sebebe dayanır.</li>
+<li>Güvence olarak Kurul'un ilan ettiği standart sözleşmeleri kullanacağız: bizim adımıza veri işleyen sağlayıcılarla "veri sorumlusundan veri işleyene" standart sözleşme; verinizi kendi amaçları için işleyen alıcılarla "veri sorumlusundan veri sorumlusuna" standart sözleşme.</li>
+<li>Bu sürümün yayın tarihinde bu sözleşmeler henüz imzalanmamış ve Kişisel Verileri Koruma Kurumu'na bildirilmemiştir.</li>
+<li>Alıcılarımızın verinizi başka ülkelere aktarması da aynı güvencelere tabidir. Oteller verinizi bizden değil Nuitée'den alır; Otele aktarım, Nuitée ile yaptığımız standart sözleşmedeki sonraki aktarım kurallarına tabidir. Her Otelle ayrıca sözleşme yapmayız.</li>
+<li>Bu aktarımlar Hizmetlerin olağan işleyişinin parçasıdır ve düzenli yapılır. Bu nedenle arızi (ara sıra yapılan) aktarım sayılmaz ve dayanakları Açık Rızanız değildir. Bu aktarımlar için sizden rıza istemeyiz.</li>
+<li>Arızi bir aktarım gerekirse, yalnız o aktarım için ve yalnız KVKK md. 9/6'daki hâllerden birine dayanarak yaparız. Bu hâl Açık Rızanız olacaksa aktarımın olası risklerini size önceden anlatır, ayrı bir beyanla onayınızı isteriz. Örnek: sizin isteğinizle bir talebinizi, düzenli ilişkimiz olmayan yurt dışındaki bir kuruma iletmemiz.</li>
+<li>Kart bilgilerinizi Nuitée'nin ödeme formuna siz doğrudan girersiniz; bu bilgiler bizim üzerimizden aktarılmaz.</li>
+</ul>
+<p><strong>Güvencelerin örneği.</strong> Kullandığımız güvencelerin bir örneğini destek@sencetravel.com adresinden isteyebilirsiniz. Ticari sır içeren kısımları çıkararak paylaşabiliriz.</p>
+<p>AB/AEA ve Birleşik Krallık'taki kullanıcılar için kullandığımız aktarım güvenceleri Gizlilik Politikası'nın "Yurt dışına aktarım" bölümündedir.</p>
+<h2>§6 Saklama</h2>
+<p>Verilerinizi, işlendikleri amaç için gerekli olduğu ya da bir kanunun öngördüğü süre kadar saklarız. Süre dolunca verileri siler, yok eder ya da anonim hâle getiririz.</p>
+<ul>
+<li><strong>Takma adlı veri anonim değildir.</strong> Adınızı taşımasa da ek bilgiyle size bağlanabilen veri kişisel veri sayılmaya devam eder. Hesabınız silindikten sonra Hesabınızla bağlantısı kaldırılarak ve iletişim bilgileri silinerek saklanan Rezervasyon kayıtları bu türdendir; bu kayıtları kişisel veri olarak korur ve süresi dolunca imha ederiz.</li>
+<li><strong>Kanuni süreyle saklanan kayıtlar</strong> yalnız o kanuni amaç için ve erişimi sınırlandırılmış olarak tutulur.</li>
+<li><strong>Periyodik imha.</strong> Saklama süresi dolan verileri düzenli aralıklarla imha ederiz; bu aralık imha yükümlülüğünün doğmasından itibaren en geç 3 ay olur. Her imha işlemini kayda alır, bu kayıtları en az 3 yıl saklarız.</li>
+</ul>
+<p>Saklama süresini ve dayanağını şu veri grupları için ayrı ayrı belirledik: Hesap bilgileri; Kullanıcı İçeriği; An'lar; doğrudan mesajlar; anlık konum; ziyaret ettiğiniz bölgelerin geçmişi; push jetonu; Yapay Zekâ Özelliği soruları ve yanıtları; Rezervasyon ve işlem kayıtları; ön bilgilendirme ve teyit kayıtları; Talep ve Şikâyet Sistemi kayıtları; fatura, muhasebe ve vergi belgeleri; destek yazışmaları; onay kayıtları; Ticari Elektronik İleti ret ve ileti kayıtları; trafik bilgisi; kullanım sınırı kaydı; web sitesi ziyaretçi IP adresi; hata, çökme ve performans kayıtları; analitik verileri; İçerik Şikâyeti, Moderasyon Kararı ve İtiraz kayıtları; Engellemeler; imha kayıtları; yedekler; hukuki uyuşmazlığa konu kayıtlar; Nuitée'deki Rezervasyon kaydı. Ayrıntılı tablo Hesap Silme ve Veri Saklama Politikası'ndadır.</p>
+<h2>§7 Haklarınız ve başvuru</h2>
+<p><strong>Nasıl başvurursunuz</strong></p>
+<ul>
+<li>Uygulamada Ayarlar → Gizlilik → Verilerin altındaki "Veri kopyası iste" satırından; satır destek adresine bir e-posta taslağı açar.</li>
+<li>Sencé'de kayıtlı e-posta adresinizden destek@sencetravel.com adresine yazarak. Başka bir adresten yazarsanız kimliğinizi doğrulamak için ek bilgi isteyebiliriz; bunun için gerekenden fazlasını istemeyiz.</li>
+<li>Yazılı olarak (eklenecek) adresine; kayıtlı elektronik posta (KEP) ile (eklenecek) adresine; güvenli elektronik imza ya da mobil imzayla.</li>
+<li>KVKK kapsamındaki başvurular Türkçe yapılır. Türkiye dışındaki kullanıcıların başvurularını İngilizce de kabul ederiz.</li>
+<li>Uygulamadan ya da kayıtlı e-posta adresinizden başvururken adınızı ve talebinizi yazmanız yeterlidir. Yazılı başvurularda KVKK başvuru usulü gereği kimlik ve tebligat bilgileri de istenir.</li>
+<li>Yasal temsilciniz (veli, vasi) ya da vekiliniz, temsil yetkisini gösteren belgeyle sizin adınıza başvurabilir.</li>
+</ul>
+<p><strong>Süre ve ücret</strong></p>
+<ul>
+<li>KVKK kapsamında en geç 30 gün içinde yanıt veririz.</li>
+<li>Başvurular ücretsizdir.</li>
+<li>Talebinizin bir kısmını kanuni bir sebeple yerine getiremezsek, hangi kısmı neden yerine getiremediğimizi gerekçesiyle yazılı ya da elektronik olarak bildiririz.</li>
+<li>AB/AEA, Birleşik Krallık ve ABD'deki kullanıcıların ek hakları ve yanıt süreleri Gizlilik Politikası'nın "Haklarınız ve başvuru" bölümündedir.</li>
+</ul>
+<p><strong>Haklarınız (KVKK md. 11)</strong></p>
+<p>Şunları isteyebilirsiniz:</p>
+<ul>
+<li>verilerinizin işlenip işlenmediğini öğrenmek ve işlenmişse bilgi istemek;</li>
+<li>işlenme amacını ve verilerin bu amaca uygun kullanılıp kullanılmadığını öğrenmek;</li>
+<li>verilerinizin yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilmek;</li>
+<li>eksik ya da yanlış işlenmişse düzeltilmesini istemek;</li>
+<li>KVKK md. 7'deki şartlar çerçevesinde silinmesini ya da yok edilmesini istemek;</li>
+<li>düzeltme ve silme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini istemek;</li>
+<li>yalnız otomatik sistemlerle yapılan analiz sonucunda aleyhinize bir sonuç çıkmasına itiraz etmek;</li>
+<li>kanuna aykırı işleme nedeniyle zarara uğrarsanız zararın giderilmesini talep etmek.</li>
+</ul>
+<p>§3'teki meşru menfaate dayanan işlemlere itirazınızı da aynı yollarla iletebilirsiniz.</p>
+<p><strong>Hesap silme ve belirli verileri sildirme.</strong> Hesabınızı Uygulamada Ayarlar → Hesabı Sil yolundan silebilirsiniz. Hesabı silmeden belirli verileri sildirme yolları ve silmeden sonra saklanan kayıtlar Hesap Silme ve Veri Saklama Politikası'ndadır.</p>
+<h2>§8 Açık rızaya dayanan işlemler</h2>
+<ul>
+<li>Verilerinizi işlemeden önce sizi bilgilendiririz. Bilgilendirme için onay istemeyiz; yalnız metni gördüğünüzü kaydederiz.</li>
+<li>Kayıtta üç ayrı adım vardır: Kullanım Koşullarını kabul etmek, bu aydınlatma metnini okuduğunuzu belirtmek ve isteğe bağlı izinleri seçmek.</li>
+<li>Açık Rızanızı yalnız analitik, Ticari Elektronik İleti ve özel istek alanına sağlık gibi özel nitelikli bir bilgi yazmanız için isteriz.</li>
+<li>Her rıza ayrı başlık, ayrı beyan ve işaretsiz seçenekle sunulur. Rıza vermemek Hizmetleri kullanmanızı engellemez; yalnız ilgili özellik çalışmaz.</li>
+<li>Rızanızı, verdiğiniz kadar kolay bir yolla istediğiniz zaman geri alabilirsiniz: destek@sencetravel.com adresine yazarak. Geri alma, o ana kadarki işlemenin hukuka uygunluğunu etkilemez.</li>
+<li>Hangi rızayı, hangi metin sürümüyle, ne zaman verip geri aldığınızı kaydeder; ispat için Hesabınız silindikten sonra da saklarız (bkz. §6). Bu sürümde bu kayıtlardan yalnız yaş beyanınız tutulur; Hesabınız silinince kayıttaki IP adresi, tarayıcı ve cihaz bilgisi boşaltılır, olay, belge, sürüm ve zaman kalır.</li>
+<li>Sözleşmeye, kanuna ya da meşru menfaate dayanan işlemler (Hesap, Rezervasyon, yurt dışındaki sağlayıcılara aktarım, güvenlik) için rıza istemeyiz (bkz. §3).</li>
+</ul>
+<p>Açık Rıza Metinleri her rızayı ayrı başlıkta anlatır: analitik (R1), Ticari Elektronik İleti (R2) ve özel istek alanındaki özel nitelikli bilgi (R6.1). Aynı belgede Yapay Zekâ Özelliğini açma seçiminin (R3), konum izninin (R4) ve bildirim izninin (R5) neden Açık Rıza olmadığı ve nasıl yönetildiği de yazılıdır. Konum, kamera, fotoğraf, mikrofon ve bildirim izinleri işletim sisteminin izinleridir; KVKK anlamında Açık Rıza değildir.</p>
+<h2>§9 Kurul'a şikâyet</h2>
+<p>Başvurunuz reddedilirse, yanıtımızı yetersiz bulursanız ya da süresinde yanıt vermezsek, yanıtımızı öğrendiğiniz tarihten itibaren 30 gün, her hâlde başvuru tarihinden itibaren 60 gün içinde Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz (KVKK md. 14). Kurul'a şikâyetten önce bize başvurmuş olmanız gerekir. Kişisel Verileri Koruma Kurumu'nun internet sitesi: https://www.kvkk.gov.tr</p>
+<h2>§10 Güncelleme</h2>
+<p>(1) Bu metni yalnız geçerli bir nedenle değiştiririz: kanun, yönetmelik ya da mahkeme veya makam kararındaki değişiklik; bir özelliğin eklenmesi, değiştirilmesi ya da kaldırılması; güvenlik ve kötüye kullanımla mücadele; Nuitée gibi sağlayıcılarımızın koşullarındaki değişiklik; metni daha anlaşılır kılmak ya da hataları düzeltmek.</p>
+<p>(2) Değişikliği, yürürlüğe girmeden en az 30 gün önce Uygulamada ve e-postayla bildiririz. Bildirimde neyin değiştiğini özetleriz.</p>
+<p>(3) Kanunun ya da bir makam kararının zorunlu kıldığı ya da acil bir güvenlik riskini gideren değişiklikler daha kısa sürede yürürlüğe girebilir. Bu durumda sizi en kısa sürede bilgilendiririz.</p>
+<p>(4) Bu metin bir bilgilendirmedir; değişiklik için onayınızı istemeyiz. Değişiklik Açık Rıza gerektiren yeni bir işlem getirirse, o işlem için ayrıca ve ayrı beyanla Açık Rızanızı isteriz (bkz. §8).</p>
+<p>(5) Her sürümün numarasını ve yürürlük tarihini metnin başına yazarız. Bu metni ve önceki sürümlerini https://legal.sencetravel.com adresinde herkese açık, kolay erişilir ve makinece okunabilir biçimde yayımlarız. Hangi sürümü ne zaman gördüğünüzü kaydederiz.</p>
+  <footer>
+    <p>Sorular: <a href="mailto:destek@sencetravel.com">destek@sencetravel.com</a></p>
+    <p>Önceki sürümler: <a href="./index.html#onceki">legal.sencetravel.com</a></p>
+  </footer>
+</main>
 </body>
 </html>
